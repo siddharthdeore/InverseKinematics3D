@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script src="sketch.js"></script>
+	<script src="p5.js"></script>
+	<style type="text/css">
+	html, body {
+		margin: 0px;
+		background-color: #fafafa;
+		overflow-y: hidden;
+		font-family: Arial;
+		font-size: 0.9em;
+	}
+	canvas {
+		display: block;
+		top: 0px;
+		left: 0px;
+	}
+	.ControlBox {
+		float: left;
+		position: absolute;
+		padding: 5px;
+		margin: 5px;
+		color: #FFFFFF;
+	}
+	input {
+		width: 6em;
+		padding: 2px;
+		margin: 2px;
+	}
+	input[type=text] {
+		width: 4em;
+	}
+</style>
+</head>
+<body>
+	<div class="ControlBox">
+		<table>
+			<tr>
+				<td>Link Length</td>
+				<td><input type="text" id="txtLinkLength" value="70" name=""></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Add or Delete Links</td>
+				<td>
+					<input type="button" value="Add Link" name="" onclick="addLink(document.getElementById('txtLinkLength').value)">
+					<input type="button" value="Delete Link" name="" onclick="removeLink()">
+
+				</td>
+			</tr>
+			<tr>
+				<td>Animate</td>
+				<td><input type="checkbox" id="chkAuto" checked onchange="setAnimateFlag(document.getElementById('chkAuto').checked);"></td>
+			</tr>
+
+			<tr><td>X-Axis</td> 
+				<td><input type="range" id="rngX" value="0" min="-250" max="250" step="1" oninput ="setX(document.getElementById('rngX').value);"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Y-Axis</td>
+				<td><input type="range" id="rngY" value="0" min="-250" max="250" step="1" oninput ="setY(document.getElementById('rngY').value);"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Z-Axis</td>
+				<td><input type="range" id="rngZ" value="0" min="-250" max="250" step="1" oninput ="setZ(document.getElementById('rngZ').value);"></td>
+				<td></td>
+			</tr>
+<!-- 			<tr>
+				<td>Omega</td>
+				<td><input type="range" id="rngOmega" value="0" min="-100" max="100" step="1" oninput ="lss[0].setOmega(lss[0].selected,document.getElementById('rngOmega').value/9.5492965964254);"></td>
+				<td></td>
+			</tr>
+		-->
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+
+	</table>
+</div>
+</body>
+</html>
