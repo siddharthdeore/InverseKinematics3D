@@ -10,6 +10,5 @@ The term Forward Kinematics is Computing the position of the end effector from k
 [Demo](https://siddharthdeore.github.io/InverseKinematics3D/)
 
 TODO :
-1. Visualize indivisial Joint angles.
-2. Joint constraints.
-3. Link Collision avoidance
+1. Joint constraints.
+2. Link Collision avoidance
