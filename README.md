@@ -7,7 +7,7 @@ Since tasks that robot can perform are getting more complicated and it is diffic
 With availability of faster computing units, it is possible to compute solution with numerical iterative procedures in real-time, making system more responsive to surrounding environment.
 Goal of project is to compute Forward Kinematics and Inverse Kinematics of 3 Dimensional robotic manipulator whose structure and configuration might change in real time, a universal iterative solver which can be used with any robotic arm with minimum possible efforts.
 The term Forward Kinematics is Computing the position of the end effector from known joint positions, orientation and link lengths. Contrarily Inverse Kinematics is estimation of the joint states necessary to reach desired position.
-[Demo](https://siddharthdeore.github.io/InverseKinematics3D/)
+[Demo](http://deore.in/apps/InverseKinematics3D/)
 
 TODO :
 1. Joint constraints.
